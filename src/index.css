@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.HomeSectionCarosal{
+  position: absolute;
+  top: 10rem;
+  right: 0rem;
+  transform: translateX(50%) rotate(-90deg);
+  border: 1px solid white;
+  background: white;
+  box-shadow: 0px 0px 2px black;
+  border-radius: .3rem;
+  padding: 0px 5px 0px 5px;
+  &:hover{
+    background: rgb(64, 118, 143);
+    border: 1px solid rgb(64, 118, 143);
+  }
+}
+.HomeSectionCarosal1{
+  position: absolute;
+  top: 10rem;
+  left: 0rem;
+  transform: translateX(-50%) rotate(90deg);
+  border: 1px solid white;
+  background: white;
+  box-shadow: 0px 0px 2px black;
+  border-radius: .3rem;
+  padding: 0px 5px 0px 5px;
+  &:hover{
+    background: rgb(64, 118, 143);
+    border: 1px solid rgb(64, 118, 143);
+  }
+}
+
+.zIndex{
+  z-index: 100000;
+}
